@@ -91,6 +91,8 @@ checkos(){
         OS=Debian
     elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
         OS=Ubuntu
+    elif grep -Eqi "Fedora" /etc/issue || grep -Eq "Red Hat Enterprise" /etc/*-release; then
+        OS=Oracle
     elif grep -Eqi "Fedora" /etc/issue || grep -Eq "Fedora" /etc/*-release; then
         OS=Fedora
     else
